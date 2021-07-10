@@ -1,0 +1,4 @@
+repository "TDGame@ssl://iskl-wy@sh02-plasticscm.unity.cn:8787"
+  path "/"
+    smartbranch "/main/1453375019" 
+     
