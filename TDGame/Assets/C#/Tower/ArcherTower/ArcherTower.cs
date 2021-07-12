@@ -20,12 +20,16 @@ using UnityEngine;
 public class ArcherTower : MonoBehaviour
 {
     /// <summary>建造防御塔ArcherTower所需金币</summary>
-    public int money=50;
+    public int levelOneMoney=50;
+
+    /// <summary> 出售一级防御塔所得金币 </summary>
+    public int sellLevelOneMoney=25;
     
     //创建一个集合，当Enemy移动到塔范围之内把其添加到集合里，否则将其移除集合
     public List<GameObject> listEnemy = new List<GameObject>();
 
     public GameObject ArcherBullet;
+    public Information inf;
 
     // Start is called before the first frame update
     void Start()
@@ -51,10 +55,9 @@ public class ArcherTower : MonoBehaviour
     /// </summary>
     public void SellClick(){
         GameObject builder=transform.parent.gameObject;
-        //GameObject face = builder.transform.Find("face").gameObject; 
         GameObject builderBtn = builder.transform.Find("builderBtn").gameObject; 
-        //face.gameObject.SetActive(true);
         builderBtn.gameObject.SetActive(true);
+        inf.GoldAdd(sellLevelOneMoney);
         MonoBehaviour.Destroy(this.gameObject);
     }
 
@@ -62,12 +65,13 @@ public class ArcherTower : MonoBehaviour
     /// 检测敌人进塔
     /// </summary>
     /// <param name="other"></param>
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider coll)
     {
-        
-        if (other.gameObject.tag == "Enemy")
+        Debug.Log("有东西");
+        if (coll.gameObject.tag == "Enemy")
         {
-            listEnemy.Add(other.gameObject);
+            Debug.Log("敌人在塔里");
+            listEnemy.Add(coll.gameObject);
         }
     }
 
@@ -83,11 +87,40 @@ public class ArcherTower : MonoBehaviour
         }
     }
 
+    private void OnTriggerStay(Collider other)
+    {
+        float timer=0;
+        if (other.gameObject.tag == "Enemy")
+        {
+            if ( timer > 1  &&  listEnemy.Count > 0)
+        {
+            Attack();
+            timer = 0;
+        }
+        else
+        {
+            timer += Time.deltaTime;
+        }
+        }
+    }
+
+    /// <summary>
+    /// 生成子弹攻击
+    /// </summary>
+    public void Attack(){
+        Instantiate(ArcherBullet,transform).transform.localPosition = new Vector2(0,0);
+        ArcherBullet.GetComponent<ArcherBullet>().SetTarget(listEnemy[0]);
+    }
+
     
 
     // Update is called once per frame
     void Update()
     {
-        
+        if( listEnemy.Count > 0){
+            Debug.Log("有敌人");
+        }
+      
+
     }
 }

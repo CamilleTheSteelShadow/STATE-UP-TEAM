@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7380483680770486310}
   - component: {fileID: 5744468084808718419}
   - component: {fileID: 2418081271538704717}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: towerBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62,7 +62,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -143,7 +143,7 @@ GameObject:
   - component: {fileID: 7553942530636075175}
   - component: {fileID: 2291038516216647074}
   - component: {fileID: 1349586732643391843}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: sell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -219,7 +219,7 @@ GameObject:
   - component: {fileID: 2426107638943371860}
   - component: {fileID: 2273225234746670103}
   - component: {fileID: 7563788362531799112}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: sellBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -270,7 +270,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -351,7 +351,7 @@ GameObject:
   - component: {fileID: 8768497345689176411}
   - component: {fileID: 6095846448876648154}
   - component: {fileID: 5231082822300441285}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -426,7 +426,7 @@ GameObject:
   - component: {fileID: 6870489996503583222}
   - component: {fileID: 6870489996503583220}
   - component: {fileID: 6870489996503583221}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: towerface
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -478,7 +478,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -503,7 +503,7 @@ GameObject:
   - component: {fileID: 6870489996967870681}
   - component: {fileID: 6870489996967870687}
   - component: {fileID: 6870489996967870680}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: bg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -553,7 +553,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -578,7 +578,8 @@ GameObject:
   - component: {fileID: 6870489997123976113}
   - component: {fileID: 2114078920012338097}
   - component: {fileID: 3933124644378681116}
-  m_Layer: 5
+  - component: {fileID: 35485112373096820}
+  m_Layer: 0
   m_Name: ArcherTower
   m_TagString: Tower
   m_Icon: {fileID: 0}
@@ -619,9 +620,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84170f83b8311dd46891297d0f46b32d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 50
+  levelOneMoney: 50
+  sellLevelOneMoney: 25
   listEnemy: []
   ArcherBullet: {fileID: 5516023981889154657, guid: 21b0b742dc902314196029ec68309774, type: 3}
+  inf: {fileID: 4073878855197513010, guid: 6ec1b259bd42e904a95e80dd54e6591e, type: 3}
 --- !u!58 &3933124644378681116
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -637,7 +640,28 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 150
+  m_Radius: 400
+--- !u!50 &35485112373096820
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6870489997123976114}
+  m_BodyType: 0
+  m_Simulated: 0
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &7277458941972107961
 GameObject:
   m_ObjectHideFlags: 0
@@ -650,7 +674,7 @@ GameObject:
   - component: {fileID: 4108089400264681736}
   - component: {fileID: 7844774272651236769}
   - component: {fileID: 1675754400834701558}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: upBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -701,7 +725,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
