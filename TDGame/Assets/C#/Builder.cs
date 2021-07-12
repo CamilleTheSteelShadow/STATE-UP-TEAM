@@ -51,15 +51,16 @@ public class Builder : MonoBehaviour
     /// 点击事件：建造防御塔ArcherTower
     /// </summary>
     public void CreateArcherTower(){
-        Debug.Log("建造防御塔1");
-        var builderBtn=transform.Find("builderBtn");
-        builderBtn.gameObject.SetActive(false);
-        var face=transform.Find("face");
-        face.gameObject.SetActive(false);
-        Instantiate(ArcherTower,transform).transform.localPosition = new Vector2(0,0);
+        if(Information.gold>=50){
+            var builderBtn=transform.Find("builderBtn");
+            builderBtn.gameObject.SetActive(false);
+            var face=transform.Find("face");
+            face.gameObject.SetActive(false);
+            Instantiate(ArcherTower,transform).transform.localPosition = new Vector2(0,0);
+            money = ArcherTower.GetComponent<ArcherTower>().money;
+            inf.Create(money);
+        }
         
-        money = ArcherTower.GetComponent<ArcherTower>().money;
-        inf.Create(money);
     }
 
     // Update is called once per frame

@@ -24,24 +24,26 @@ public class Information : MonoBehaviour
     public Text lifeNum;
     public Text goldNum;
 
-    int life=0;
-    int gold=0;
+    public static int life=0;
+    public static int gold=0;
   
     // Start is called before the first frame update
     void Start()
     {
         Scene scene = SceneManager.GetActiveScene ();
 
+        /// <summary>
+        /// 根据关卡初始化生命值和金币数
+        /// </summary>
+        /// <value></value>
         switch(scene.name){
             case "Level1":
-            life=10;
-            gold=100;
-            lifeNum.text=""+life;
-            goldNum.text=""+gold;
+            Information.life=10;
+            Information.gold=100;
             break;
 
         }
-        Debug.Log(gold);
+        Debug.Log(Information.gold);
         Debug.Log(goldNum.text);
     }
 
@@ -50,19 +52,15 @@ public class Information : MonoBehaviour
     /// </summary>
     /// <param name="money"> 建造防御塔所需金币数 </param>
     public void Create(int money){
-        Debug.Log("金币减少");
-        Debug.Log(gold);
-        Debug.Log(goldNum.text);
-        gold=gold-money;
-        goldNum.text=""+gold;
-        Debug.Log(gold);
-        Debug.Log(goldNum.text);
+        Information.gold=Information.gold-money;
     }
 
     
     // Update is called once per frame
     void Update()
     {
-        //goldNum.text=""+gold;
+        //实时更新生命值和金币数
+        lifeNum.text=""+Information.life;
+        goldNum.text=""+Information.gold;
     }
 }

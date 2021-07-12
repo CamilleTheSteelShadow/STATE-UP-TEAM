@@ -340,7 +340,6 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/VSSettingsProvider.ref.dll"
-"Assets/C#/ArcherTower.cs"
 "Assets/C#/Builder.cs"
 "Assets/C#/CreateBuilder.cs"
 "Assets/C#/Enemy.cs"
@@ -349,6 +348,8 @@
 "Assets/C#/ObjectPool.cs"
 "Assets/C#/SelectLevel.cs"
 "Assets/C#/SettingButton.cs"
+"Assets/C#/Tower/ArcherTower/ArcherBullet.cs"
+"Assets/C#/Tower/ArcherTower/ArcherTower.cs"
 -langversion:8.0
 
 /deterministic
