@@ -5,53 +5,44 @@ using UnityEngine.UI;
 
 
 public class Enemy : MonoBehaviour
-{
-    [SerializeField]
-    private GameObject[] Enemys;
+{ 
+    public float speed = 1;
+    private int index = 0;
+
+    private Transform[] positions;
     // Start is called before the first frame update
     void Start()
     {
-
+        positions = Waypoints.positions;
     }
     // Update is called once per frame
     void Update()
     {
-        //Move();
+        Move();
     }
 
-    public void CreateEnemy()
+
+     void Move()
     {
-        string type = RandomEnemy();
-        for (int i = 0; i < Enemys.Length; i++)
+        if (index > positions.Length - 1) return;
+        transform.Translate((positions[index].position-transform.position).normalized * Time.deltaTime * speed);
+        if (Vector3.Distance(positions[index].position, transform.position) < 0.2f)
         {
-            if (Enemys[i].name == type)
-            {
-                Instantiate(Enemys[i], transform).transform.localPosition = new Vector2(-141, -162);
-            }
+            index++;
+        }
+        if (index > positions.Length - 1)
+        {
+            ReachDestination();
         }
     }
 
-    public string RandomEnemy()
+    void ReachDestination()
     {
-        int Index = Random.Range(0, 2);
-        string type = string.Empty;
-        switch (Index)
-        {
-            case 0:
-                type = "enemy1walk";
-                break;
-            case 1:
-                type = "enemy2walk";
-                break;
-            case 2:
-                type = "enemy3walk";
-                break;
-        }
-        return type;
+        GameObject.Destroy(this.gameObject);
     }
 
-    /*public void Move()
+    void OnDestroy()
     {
-        transform.Translate();
-    }*/
+        EnemySpawner.CountEnemyAlive--;
+    }
 }
