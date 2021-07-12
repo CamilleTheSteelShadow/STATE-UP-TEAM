@@ -471,7 +471,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2844b86af1b8c764f9598502c4640079, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tower1: {fileID: 0}
+  builder: {fileID: 4817450663700548920, guid: b45e0958ad367514587a7d958f3bc169, type: 3}
 --- !u!1 &1591033507
 GameObject:
   m_ObjectHideFlags: 0
@@ -821,7 +821,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5da839ea27cbd9147a86b7ef49d8c709, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  information: {fileID: 0}
+  information: {fileID: 2434308554141458266, guid: 6ec1b259bd42e904a95e80dd54e6591e, type: 3}
+  setBtn: {fileID: 5196791110655527582, guid: 3896361f6a9bf3a4a848f8b4238513f1, type: 3}
 --- !u!114 &2009709593
 MonoBehaviour:
   m_ObjectHideFlags: 0

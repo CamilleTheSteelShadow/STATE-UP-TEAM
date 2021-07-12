@@ -1,9 +1,27 @@
+/*****************************************************
+
+*　　功能　　　　　　防御塔ArcherTower的升级、出售功能
+
+*　　作者　　　　　　伍迎
+
+*　　时间　　　　　　2021.07.10
+
+*　　
+
+*　　修改说明　　　　.......
+
+*　　。。。
+
+*******************************************************/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class ArcherTower : MonoBehaviour
 {
+    /// <summary>建造防御塔ArcherTower所需金币</summary>
+    public int money=50;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -11,7 +29,9 @@ public class ArcherTower : MonoBehaviour
         towerface.gameObject.SetActive(false);
     }
 
-    //显示面板
+    /// <summary>
+    /// 点击事件：显示防御塔面板
+    /// </summary>
     public void TowerFaceShowClick(){
         var towerface=transform.Find("towerface");
         if(towerface.gameObject.activeInHierarchy){
@@ -21,7 +41,9 @@ public class ArcherTower : MonoBehaviour
         }
     }
 
-    //出售防御塔
+    /// <summary>
+    /// 点击事件：出售防御塔
+    /// </summary>
     public void SellClick(){
         GameObject builder=transform.parent.gameObject;
         //GameObject face = builder.transform.Find("face").gameObject; 

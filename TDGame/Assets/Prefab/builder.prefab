@@ -255,7 +255,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 4817450663700548922}
         m_TargetAssemblyTypeName: Builder, Assembly-CSharp
-        m_MethodName: CreateTower1
+        m_MethodName: CreateArcherTower
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -390,7 +390,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1408dbbfb136d9f45bbf700f3737c0ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tower1: {fileID: 6870489997123976114, guid: cd528e5ab7934c8419e0088c31fdcd08, type: 3}
+  ArcherTower: {fileID: 6870489997123976114, guid: cd528e5ab7934c8419e0088c31fdcd08, type: 3}
+  inf: {fileID: 4073878855197513010, guid: 6ec1b259bd42e904a95e80dd54e6591e, type: 3}
 --- !u!1 &4817450663824492168
 GameObject:
   m_ObjectHideFlags: 0
