@@ -1,10 +1,15 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - ArcherTower
+    - Builder
     - CreateBuilder
     - Enemy
     - Game
+    - Information
     - ObjectPool
+    - SelectLevel
+    - SettingButton
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
@@ -61,25 +66,84 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1490}
     - Class: 114
-      Script: {instanceID: 1610}
+      Script: {instanceID: 1608}
     - Class: 114
-      Script: {instanceID: 2596}
+      Script: {instanceID: 2594}
     - Class: 114
-      Script: {instanceID: 2814}
+      Script: {instanceID: 2812}
     - Class: 114
-      Script: {instanceID: 3098}
+      Script: {instanceID: 3096}
     - Class: 114
-      Script: {instanceID: 5536}
+      Script: {instanceID: 5196}
     - Class: 114
-      Script: {instanceID: 5864}
+      Script: {instanceID: 5538}
     - Class: 114
-      Script: {instanceID: 6158}
+      Script: {instanceID: 5866}
     - Class: 114
-      Script: {instanceID: 6210}
+      Script: {instanceID: 5994}
     - Class: 114
-      Script: {instanceID: 6386}
+      Script: {instanceID: 6160}
     - Class: 114
-      Script: {instanceID: 7840}
+      Script: {instanceID: 6212}
+    - Class: 114
+      Script: {instanceID: 6388}
+    - Class: 114
+      Script: {instanceID: 6558}
+    - Class: 114
+      Script: {instanceID: 7628}
+    - Class: 114
+      Script: {instanceID: 7842}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/SelectLevel.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1490}
+    - Class: 114
+      Script: {instanceID: 2594}
+    - Class: 114
+      Script: {instanceID: 2812}
+    - Class: 114
+      Script: {instanceID: 3096}
+    - Class: 114
+      Script: {instanceID: 4230}
+    - Class: 114
+      Script: {instanceID: 5538}
+    - Class: 114
+      Script: {instanceID: 5866}
+    - Class: 114
+      Script: {instanceID: 6388}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -119,7 +183,7 @@ ScriptsOnlyBuild:
     className: SpriteSkin
   - hash:
       serializedVersion: 2
-      Hash: 67258fd6a11ecb9d97b421c0daa8ef5f
+      Hash: e4a0f184414cf8bf51f42f9b23e4d156
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Game
@@ -533,6 +597,12 @@ ScriptsOnlyBuild:
     className: UnityOnJointBreak2DMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SelectLevel
+  - hash:
+      serializedVersion: 2
       Hash: 2574ac7d50617d23cdefe4ad22f5e1ad
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -660,6 +730,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SettingButton
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnCollisionEnter2DMessageListener
@@ -731,7 +807,7 @@ ScriptsOnlyBuild:
     className: AspectRatioFitter
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 31316a424f2a8611044b0e25dd6ac9ec
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ArcherTower
@@ -749,7 +825,7 @@ ScriptsOnlyBuild:
     className: Enemy
   - hash:
       serializedVersion: 2
-      Hash: 48b60af68580a7cf81783267b16b0396
+      Hash: 8c4879baf18d82ae75545494d6d72b91
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CreateBuilder
@@ -803,7 +879,7 @@ ScriptsOnlyBuild:
     className: SpriteShapeController
   - hash:
       serializedVersion: 2
-      Hash: 8c0a9652a0c4c18a464ccc360d06cfa9
+      Hash: ac11c227eef00f5f689253fa581f7e84
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Information
@@ -965,7 +1041,7 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: 48b60af68580a7cf81783267b16b0396
+      Hash: 52141f8cbbde6034793452649a4682e7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Builder
@@ -1073,5 +1149,6 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   platform: 19
   scenePathNames:
+  - Assets/Scenes/SelectLevel.unity
   - Assets/Scenes/Level1.unity
-  playerPath: "C:/Users/\u674E\u68EE\u5965/Desktop/TDGame/TDGame.exe"
+  playerPath: E:/UnityHub/Project/STATE-UP-TEAM/TDGame/TDGame.exe
