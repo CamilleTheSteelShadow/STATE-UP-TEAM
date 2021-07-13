@@ -26,6 +26,10 @@ public class SelectLevel : MonoBehaviour
         
     }
 
+    public void ReturnStartClick(){
+        SceneManager.LoadScene("StartScene");
+    }
+
     /// <summary>
     /// 点击事件：跳转至关卡1场景
     /// </summary>

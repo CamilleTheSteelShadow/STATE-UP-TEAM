@@ -7,14 +7,16 @@ public class ArcherBullet : MonoBehaviour
 
     public GameObject target;
 
+    //public Transform target; //瞄准的目标
+
     private Vector2 speed=new Vector2(1,1);
 
     /// <summary>
     /// 设置子弹目标
     /// </summary>
     /// <param name="EnemyTarget"></param>
-    public void SetTarget(GameObject EnemyTarget){
-        this.target=EnemyTarget;
+    public void SetTarget(GameObject enemyTarget){
+        this.target=enemyTarget;
     }
 
 
@@ -23,6 +25,8 @@ public class ArcherBullet : MonoBehaviour
     {
         
     }
+
+    
 
     /// <summary>
     /// 检测攻击Enemy
@@ -42,6 +46,6 @@ public class ArcherBullet : MonoBehaviour
     {
         transform.LookAt(target.transform );
         transform.Translate(transform.forward * Time.deltaTime * speed);
-        //rigidbody.MovePosition(rigidbody.position + speed * Time.deltaTime);
+        //transform.GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position + speed * Time.deltaTime);
     }
 }

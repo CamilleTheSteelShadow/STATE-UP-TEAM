@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637617371934301789
+      ticks: 637617383570513084
     m_Hash: 512497800
   m_LockFileStatus:
     m_FilePath: E:/UnityHub/Project/STATE-UP-TEAM/TDGame/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637617371934301789
+      ticks: 637617383570518812
     m_Hash: 823718707
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}

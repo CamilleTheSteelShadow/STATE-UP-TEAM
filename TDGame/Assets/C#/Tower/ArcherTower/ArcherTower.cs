@@ -31,6 +31,8 @@ public class ArcherTower : MonoBehaviour
     public GameObject ArcherBullet;
     public Information inf;
 
+    public static int timer=0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -65,13 +67,11 @@ public class ArcherTower : MonoBehaviour
     /// 检测敌人进塔
     /// </summary>
     /// <param name="other"></param>
-    private void OnTriggerEnter2D(Collider2D coll)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("有东西");
-        if (coll.gameObject.tag == "Enemy")
+        if (other.gameObject.tag == "Enemy")
         {
-            Debug.Log("敌人在塔里");
-            listEnemy.Add(coll.gameObject);
+            listEnemy.Add(other.gameObject);
         }
     }
 
@@ -87,20 +87,27 @@ public class ArcherTower : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// 每隔2s攻击
+    /// </summary>
+    /// <param name="other"></param>
     private void OnTriggerStay2D(Collider2D other)
     {
-        float timer=0;
         if (other.gameObject.tag == "Enemy")
         {
-            if ( timer > 1  &&  listEnemy.Count > 0)
-        {
-            Attack();
-            timer = 0;
-        }
-        else
-        {
-            timer += Time.deltaTime;
-        }
+            
+            if ( ArcherTower.timer == 2  &&  listEnemy.Count > 0)
+            {
+                Debug.Log("准备攻击");
+                Vector2 position=other.transform.position;
+                Attack();
+                Debug.Log("攻击了");
+                ArcherTower.timer = 0;
+            }else
+            {
+                Debug.Log("sad");
+                ArcherTower.timer++;
+            }
         }
     }
 
@@ -108,6 +115,7 @@ public class ArcherTower : MonoBehaviour
     /// 生成子弹攻击
     /// </summary>
     public void Attack(){
+        Debug.Log("在攻击");
         Instantiate(ArcherBullet,transform).transform.localPosition = new Vector2(0,0);
         ArcherBullet.GetComponent<ArcherBullet>().SetTarget(listEnemy[0]);
     }

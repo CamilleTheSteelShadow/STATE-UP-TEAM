@@ -1,20 +1,21 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - ArcherBullet
     - ArcherTower
     - Builder
     - CreateBuilder
     - Enemy
+    - EnemySpawner
     - Game
     - Information
-    - ObjectPool
     - SelectLevel
     - SettingButton
+    - Waypoints
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
-    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
@@ -53,6 +54,12 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
@@ -66,33 +73,37 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1490}
     - Class: 114
-      Script: {instanceID: 1608}
+      Script: {instanceID: 1492}
     - Class: 114
-      Script: {instanceID: 2594}
+      Script: {instanceID: 1494}
     - Class: 114
-      Script: {instanceID: 2812}
+      Script: {instanceID: 1614}
     - Class: 114
-      Script: {instanceID: 3096}
+      Script: {instanceID: 2602}
     - Class: 114
-      Script: {instanceID: 5196}
+      Script: {instanceID: 2820}
     - Class: 114
-      Script: {instanceID: 5538}
+      Script: {instanceID: 5202}
     - Class: 114
-      Script: {instanceID: 5866}
+      Script: {instanceID: 5650}
     - Class: 114
-      Script: {instanceID: 5994}
+      Script: {instanceID: 5872}
     - Class: 114
-      Script: {instanceID: 6160}
+      Script: {instanceID: 6000}
     - Class: 114
-      Script: {instanceID: 6212}
+      Script: {instanceID: 6166}
     - Class: 114
-      Script: {instanceID: 6388}
+      Script: {instanceID: 6218}
     - Class: 114
-      Script: {instanceID: 6558}
+      Script: {instanceID: 6394}
     - Class: 114
-      Script: {instanceID: 7628}
+      Script: {instanceID: 6564}
     - Class: 114
-      Script: {instanceID: 7842}
+      Script: {instanceID: 6984}
+    - Class: 114
+      Script: {instanceID: 7636}
+    - Class: 114
+      Script: {instanceID: 8166}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -131,19 +142,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1490}
     - Class: 114
-      Script: {instanceID: 2594}
+      Script: {instanceID: 1492}
     - Class: 114
-      Script: {instanceID: 2812}
+      Script: {instanceID: 1494}
     - Class: 114
-      Script: {instanceID: 3096}
+      Script: {instanceID: 2602}
     - Class: 114
-      Script: {instanceID: 4230}
+      Script: {instanceID: 2820}
     - Class: 114
-      Script: {instanceID: 5538}
+      Script: {instanceID: 4236}
     - Class: 114
-      Script: {instanceID: 5866}
+      Script: {instanceID: 5872}
     - Class: 114
-      Script: {instanceID: 6388}
+      Script: {instanceID: 6394}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -169,6 +180,18 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: 699619b86d9359741a4f58540298c80b
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
+  - hash:
+      serializedVersion: 2
+      Hash: 69415240821be7986b27e72bf9609a30
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Button
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -415,12 +438,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.Animation.Runtime.dll
     namespaceName: UnityEngine.U2D.Animation
     className: Bone
-  - hash:
-      serializedVersion: 2
-      Hash: 69415240821be7986b27e72bf9609a30
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Button
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -771,10 +788,10 @@ ScriptsOnlyBuild:
     className: UnityOnDeselectMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 699619b86d9359741a4f58540298c80b
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Text
+      Hash: 1b0ace8e658f5e2a9de08d69b338b23b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemySpawner
   - hash:
       serializedVersion: 2
       Hash: 2574ac7d50617d23cdefe4ad22f5e1ad
@@ -807,7 +824,7 @@ ScriptsOnlyBuild:
     className: AspectRatioFitter
   - hash:
       serializedVersion: 2
-      Hash: 31316a424f2a8611044b0e25dd6ac9ec
+      Hash: 513922ffcf0cd7bf11f6e81d9193c762
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ArcherTower
@@ -819,7 +836,7 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: 0f7d53f1b7f321d09fb24183e9d1cb17
+      Hash: afc5b93a7b192de2dcb3832fe35a5c7e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Enemy
@@ -937,6 +954,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.Tilemap.Extras.dll
     namespaceName: UnityEngine
     className: RuleTile
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Waypoints
   - hash:
       serializedVersion: 2
       Hash: 18c222bef9ae745ce69ddde9b74337ca
@@ -1077,12 +1100,6 @@ ScriptsOnlyBuild:
     className: UnityOnMouseOverMessageListener
   - hash:
       serializedVersion: 2
-      Hash: fec3b55d37e2e34582be2537e72136ab
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ObjectPool
-  - hash:
-      serializedVersion: 2
       Hash: 2574ac7d50617d23cdefe4ad22f5e1ad
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -1111,6 +1128,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.Animation.Runtime.dll
     namespaceName: UnityEngine.U2D.Animation
     className: SpriteLibrarySourceAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 66bca5cc6a18c5298ec75235e56a84d6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ArcherBullet
   - hash:
       serializedVersion: 2
       Hash: 8220b46879dc5e37db1b940c938f5744
@@ -1151,4 +1174,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/SelectLevel.unity
   - Assets/Scenes/Level1.unity
-  playerPath: E:/UnityHub/Project/STATE-UP-TEAM/TDGame/TDGame.exe
+  playerPath: E:/UnityHub/Project/STATE-UP-TEAM/TD/TDGame.exe
