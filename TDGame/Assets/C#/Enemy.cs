@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 { 
-    public float speed = 1;
+    public float speed = 10;
     private int index = 0;
 
     private Transform[] positions;

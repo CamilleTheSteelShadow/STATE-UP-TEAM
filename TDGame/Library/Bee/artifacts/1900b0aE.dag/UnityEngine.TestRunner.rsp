@@ -302,11 +302,7 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.13f1c1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.13f1c1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.13f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll"
-<<<<<<< HEAD
--r:"C:/Users/李森奥/Desktop/STATE-UP-TEAM/TDGame/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
-=======
--r:"E:/UnityHub/Project/STATE-UP-TEAM/TDGame/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
->>>>>>> 756cfca21e6a7797fcd5eac543a6d1a9a4e07e0b
+-r:"C:/STATE-UP-TEAM/TDGame/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
 "Library/PackageCache/com.unity.test-framework@1.1.26/UnityEngine.TestRunner/AssemblyInfo.cs"
 "Library/PackageCache/com.unity.test-framework@1.1.26/UnityEngine.TestRunner/Assertions/AllocatingGCMemoryConstraint.cs"
 "Library/PackageCache/com.unity.test-framework@1.1.26/UnityEngine.TestRunner/Assertions/ConstraintsExtensions.cs"
