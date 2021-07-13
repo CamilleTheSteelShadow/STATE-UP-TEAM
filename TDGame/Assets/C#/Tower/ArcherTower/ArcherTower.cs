@@ -65,7 +65,7 @@ public class ArcherTower : MonoBehaviour
     /// 检测敌人进塔
     /// </summary>
     /// <param name="other"></param>
-    private void OnTriggerEnter(Collider coll)
+    private void OnTriggerEnter2D(Collider2D coll)
     {
         Debug.Log("有东西");
         if (coll.gameObject.tag == "Enemy")
@@ -79,7 +79,7 @@ public class ArcherTower : MonoBehaviour
     /// 检测Enemy出塔
     /// </summary>
     /// <param name="other"></param>
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.tag == "Enemy")
         {
@@ -87,7 +87,7 @@ public class ArcherTower : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerStay2D(Collider2D other)
     {
         float timer=0;
         if (other.gameObject.tag == "Enemy")
@@ -117,9 +117,6 @@ public class ArcherTower : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if( listEnemy.Count > 0){
-            Debug.Log("有敌人");
-        }
       
 
     }
