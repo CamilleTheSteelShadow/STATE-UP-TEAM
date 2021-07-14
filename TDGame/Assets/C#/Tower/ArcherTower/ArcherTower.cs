@@ -31,7 +31,7 @@ public class ArcherTower : MonoBehaviour
     public GameObject ArcherBullet;
     public Information inf;
 
-    public static int timer=1;
+    public static int timer=0;
 
     // Start is called before the first frame update
     void Start()
@@ -72,8 +72,8 @@ public class ArcherTower : MonoBehaviour
         if (other.gameObject.tag == "Enemy")
         {
             listEnemy.Add(other.gameObject);
-            if(listEnemy.Count>-1){
-                CreateBullet();
+            if(listEnemy.Count>0){
+                Attack();
             }
             
         }
@@ -91,44 +91,24 @@ public class ArcherTower : MonoBehaviour
         }
     }
 
+    
     /// <summary>
-    /// 每隔2s攻击
+    /// 生成子弹攻击
     /// </summary>
-    /// <param name="other"></param>
-    private void OnTriggerStay2D(Collider2D other)
-    {
-        if (other.gameObject.tag == "Enemy")
-        {
-            
-            
-        }
-    }
-    public void CreateBullet(){
+    public void Attack(){
         if ( ArcherTower.timer == 1)
             {
-                Debug.Log("准备攻击");
                 Vector2 position=listEnemy[0].transform.position;
-                Attack();
-                Debug.Log("攻击了");
+                Vector2 enemyPosition=listEnemy[0].transform.position;
+                Instantiate(ArcherBullet,transform).transform.localPosition = new Vector2(0,0);
+                //ArcherBullet.GetComponent<ArcherBullet>().MoveToEnemy(listEnemy[0].transform.position);
+                ArcherBullet.GetComponent<ArcherBullet>().SetTarget(enemyPosition);
                 ArcherTower.timer = 0;
             }else
             {
                 Debug.Log("sad");
                 ArcherTower.timer++;
             }
-    }
-
-
-
-    /// <summary>
-    /// 生成子弹攻击
-    /// </summary>
-    public void Attack(){
-        Debug.Log("在攻击");
-        Vector2 enemyPosition=listEnemy[0].transform.position;
-        Instantiate(ArcherBullet,transform).transform.localPosition = new Vector2(0,0);
-        //ArcherBullet.GetComponent<ArcherBullet>().MoveToEnemy(listEnemy[0].transform.position);
-        ArcherBullet.GetComponent<ArcherBullet>().SetTarget(enemyPosition);
     }
 
 

@@ -80,35 +80,35 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1494}
     - Class: 114
-      Script: {instanceID: 1612}
+      Script: {instanceID: 1622}
     - Class: 114
-      Script: {instanceID: 2600}
+      Script: {instanceID: 2610}
     - Class: 114
-      Script: {instanceID: 2818}
+      Script: {instanceID: 2828}
     - Class: 114
-      Script: {instanceID: 5178}
+      Script: {instanceID: 5188}
     - Class: 114
-      Script: {instanceID: 5200}
+      Script: {instanceID: 5210}
     - Class: 114
-      Script: {instanceID: 5648}
+      Script: {instanceID: 5658}
     - Class: 114
-      Script: {instanceID: 5870}
+      Script: {instanceID: 5880}
     - Class: 114
-      Script: {instanceID: 5998}
+      Script: {instanceID: 6008}
     - Class: 114
-      Script: {instanceID: 6164}
+      Script: {instanceID: 6174}
     - Class: 114
-      Script: {instanceID: 6216}
+      Script: {instanceID: 6226}
     - Class: 114
-      Script: {instanceID: 6392}
+      Script: {instanceID: 6402}
     - Class: 114
-      Script: {instanceID: 6562}
+      Script: {instanceID: 6572}
     - Class: 114
-      Script: {instanceID: 6982}
+      Script: {instanceID: 6992}
     - Class: 114
-      Script: {instanceID: 7636}
+      Script: {instanceID: 7646}
     - Class: 114
-      Script: {instanceID: 8166}
+      Script: {instanceID: 8176}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -151,15 +151,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1494}
     - Class: 114
-      Script: {instanceID: 2600}
+      Script: {instanceID: 2610}
     - Class: 114
-      Script: {instanceID: 2818}
+      Script: {instanceID: 2828}
     - Class: 114
-      Script: {instanceID: 4234}
+      Script: {instanceID: 4244}
     - Class: 114
-      Script: {instanceID: 5870}
+      Script: {instanceID: 5880}
     - Class: 114
-      Script: {instanceID: 6392}
+      Script: {instanceID: 6402}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -202,15 +202,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1494}
     - Class: 114
-      Script: {instanceID: 2600}
+      Script: {instanceID: 2610}
     - Class: 114
-      Script: {instanceID: 2818}
+      Script: {instanceID: 2828}
     - Class: 114
-      Script: {instanceID: 5870}
+      Script: {instanceID: 5880}
     - Class: 114
-      Script: {instanceID: 6392}
+      Script: {instanceID: 6402}
     - Class: 114
-      Script: {instanceID: 7116}
+      Script: {instanceID: 7126}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1234,7 +1234,7 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   platform: 19
   scenePathNames:
+  - Assets/Scenes/StartScene.unity
   - Assets/Scenes/SelectLevel.unity
   - Assets/Scenes/Level1.unity
-  - Assets/Scenes/StartScene.unity
-  playerPath: "C:/Users/\u674E\u68EE\u5965/Desktop/STATE-UP-TEAM/TD/TDGame.exe"
+  playerPath: E:/UnityHub/Project/STATE-UP-TEAM/TD/TDGame.exe
