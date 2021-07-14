@@ -31,7 +31,7 @@ public class ArcherTower : MonoBehaviour
     public GameObject ArcherBullet;
     public Information inf;
 
-    public static int timer=0;
+    public static int timer=1;
 
     // Start is called before the first frame update
     void Start()
@@ -72,6 +72,10 @@ public class ArcherTower : MonoBehaviour
         if (other.gameObject.tag == "Enemy")
         {
             listEnemy.Add(other.gameObject);
+            if(listEnemy.Count>-1){
+                CreateBullet();
+            }
+            
         }
     }
 
@@ -96,10 +100,14 @@ public class ArcherTower : MonoBehaviour
         if (other.gameObject.tag == "Enemy")
         {
             
-            if ( ArcherTower.timer == 2  &&  listEnemy.Count > 0)
+            
+        }
+    }
+    public void CreateBullet(){
+        if ( ArcherTower.timer == 1)
             {
                 Debug.Log("准备攻击");
-                Vector2 position=other.transform.position;
+                Vector2 position=listEnemy[0].transform.position;
                 Attack();
                 Debug.Log("攻击了");
                 ArcherTower.timer = 0;
@@ -108,16 +116,33 @@ public class ArcherTower : MonoBehaviour
                 Debug.Log("sad");
                 ArcherTower.timer++;
             }
-        }
     }
+
+
 
     /// <summary>
     /// 生成子弹攻击
     /// </summary>
     public void Attack(){
         Debug.Log("在攻击");
+        Vector2 enemyPosition=listEnemy[0].transform.position;
         Instantiate(ArcherBullet,transform).transform.localPosition = new Vector2(0,0);
-        ArcherBullet.GetComponent<ArcherBullet>().SetTarget(listEnemy[0]);
+        //ArcherBullet.GetComponent<ArcherBullet>().MoveToEnemy(listEnemy[0].transform.position);
+        ArcherBullet.GetComponent<ArcherBullet>().SetTarget(enemyPosition);
+    }
+
+
+    private void UpdateEnemy()
+    {
+        for(int i=0;i<listEnemy.Count; i++)
+        {
+            if(listEnemy[i] == null)
+            {
+                if(i==listEnemy.Count-1){
+                    listEnemy[i]=listEnemy[i+1];
+                }
+            }
+        }
     }
 
     
@@ -125,7 +150,6 @@ public class ArcherTower : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      
-
+      UpdateEnemy();
     }
 }

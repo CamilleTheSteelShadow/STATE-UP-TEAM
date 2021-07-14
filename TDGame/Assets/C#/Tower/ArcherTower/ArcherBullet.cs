@@ -5,18 +5,19 @@ using UnityEngine;
 public class ArcherBullet : MonoBehaviour
 {
 
-    public GameObject target;
+    //public GameObject target;
 
-    //public Transform target; //瞄准的目标
+    public Transform target; //瞄准的目标
+    public Vector2 enemyPosition;
 
-    private Vector2 speed=new Vector2(1,1);
+    //public float speed=1000;
 
     /// <summary>
     /// 设置子弹目标
     /// </summary>
     /// <param name="EnemyTarget"></param>
-    public void SetTarget(GameObject enemyTarget){
-        this.target=enemyTarget;
+    public void SetTarget(Vector2 enemyPosition){
+        this.enemyPosition=enemyPosition;
     }
 
 
@@ -26,13 +27,18 @@ public class ArcherBullet : MonoBehaviour
         
     }
 
+    public void MoveToEnemy(){
+        float step = 5 * Time.deltaTime;
+        this.transform.position=Vector2.MoveTowards(this.transform.position, this.enemyPosition, step);  
+    }
+
     
 
     /// <summary>
     /// 检测攻击Enemy
     /// </summary>
     /// <param name="other"></param>
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         
         if (other.gameObject.tag == "Enemy")
@@ -44,8 +50,9 @@ public class ArcherBullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.LookAt(target.transform );
-        transform.Translate(transform.forward * Time.deltaTime * speed);
+        MoveToEnemy();
+        //transform.LookAt(target.transform );
+        //transform.Translate(transform.forward * Time.deltaTime * speed);
         //transform.GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position + speed * Time.deltaTime);
     }
 }

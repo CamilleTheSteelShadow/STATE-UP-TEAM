@@ -11,11 +11,13 @@ ScriptsOnlyBuild:
     - Information
     - SelectLevel
     - SettingButton
+    - StartButton
     - Waypoints
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
@@ -39,6 +41,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/Level1.unity:
@@ -77,29 +80,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1494}
     - Class: 114
-      Script: {instanceID: 1614}
+      Script: {instanceID: 1612}
     - Class: 114
-      Script: {instanceID: 2602}
+      Script: {instanceID: 2600}
     - Class: 114
-      Script: {instanceID: 2820}
+      Script: {instanceID: 2818}
     - Class: 114
-      Script: {instanceID: 5202}
+      Script: {instanceID: 5178}
     - Class: 114
-      Script: {instanceID: 5650}
+      Script: {instanceID: 5200}
     - Class: 114
-      Script: {instanceID: 5872}
+      Script: {instanceID: 5648}
     - Class: 114
-      Script: {instanceID: 6000}
+      Script: {instanceID: 5870}
     - Class: 114
-      Script: {instanceID: 6166}
+      Script: {instanceID: 5998}
     - Class: 114
-      Script: {instanceID: 6218}
+      Script: {instanceID: 6164}
     - Class: 114
-      Script: {instanceID: 6394}
+      Script: {instanceID: 6216}
     - Class: 114
-      Script: {instanceID: 6564}
+      Script: {instanceID: 6392}
     - Class: 114
-      Script: {instanceID: 6984}
+      Script: {instanceID: 6562}
+    - Class: 114
+      Script: {instanceID: 6982}
     - Class: 114
       Script: {instanceID: 7636}
     - Class: 114
@@ -146,15 +151,66 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1494}
     - Class: 114
-      Script: {instanceID: 2602}
+      Script: {instanceID: 2600}
     - Class: 114
-      Script: {instanceID: 2820}
+      Script: {instanceID: 2818}
     - Class: 114
-      Script: {instanceID: 4236}
+      Script: {instanceID: 4234}
     - Class: 114
-      Script: {instanceID: 5872}
+      Script: {instanceID: 5870}
     - Class: 114
-      Script: {instanceID: 6394}
+      Script: {instanceID: 6392}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/StartScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1490}
+    - Class: 114
+      Script: {instanceID: 1492}
+    - Class: 114
+      Script: {instanceID: 1494}
+    - Class: 114
+      Script: {instanceID: 2600}
+    - Class: 114
+      Script: {instanceID: 2818}
+    - Class: 114
+      Script: {instanceID: 5870}
+    - Class: 114
+      Script: {instanceID: 6392}
+    - Class: 114
+      Script: {instanceID: 7116}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -836,7 +892,7 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: afc5b93a7b192de2dcb3832fe35a5c7e
+      Hash: 17974343a4e860ce8579ee137da968cf
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Enemy
@@ -993,6 +1049,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StartButton
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnScrollRectValueChangedMessageListener
@@ -1130,7 +1192,7 @@ ScriptsOnlyBuild:
     className: SpriteLibrarySourceAsset
   - hash:
       serializedVersion: 2
-      Hash: 66bca5cc6a18c5298ec75235e56a84d6
+      Hash: 385c57d80d62052f4e6b46c4a0f4c457
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ArcherBullet
@@ -1174,4 +1236,5 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/SelectLevel.unity
   - Assets/Scenes/Level1.unity
-  playerPath: E:/UnityHub/Project/STATE-UP-TEAM/TD/TDGame.exe
+  - Assets/Scenes/StartScene.unity
+  playerPath: "C:/Users/\u674E\u68EE\u5965/Desktop/STATE-UP-TEAM/TD/TDGame.exe"

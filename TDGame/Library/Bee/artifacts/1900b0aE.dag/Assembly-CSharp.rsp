@@ -340,8 +340,10 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/VSSettingsProvider.ref.dll"
-"Assets/C#/Enemy.cs"
-"Assets/C#/EnemySpawner.cs"
+"Assets/C#/Enemy/Enemy.cs"
+"Assets/C#/Enemy/EnemySpawner.cs"
+"Assets/C#/Enemy/Wave.cs"
+"Assets/C#/Enemy/Waypoints.cs"
 "Assets/C#/GameControl/CreateBuilder.cs"
 "Assets/C#/GameControl/Game.cs"
 "Assets/C#/GameControl/Information.cs"
@@ -351,8 +353,6 @@
 "Assets/C#/Tower/ArcherTower/ArcherBullet.cs"
 "Assets/C#/Tower/ArcherTower/ArcherTower.cs"
 "Assets/C#/Tower/Builder.cs"
-"Assets/C#/Wave.cs"
-"Assets/C#/Waypoints.cs"
 -langversion:8.0
 
 /deterministic

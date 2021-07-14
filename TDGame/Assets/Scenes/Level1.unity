@@ -153,14 +153,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waves:
-  - enemyPrefab: {fileID: 9137256413957624487, guid: f3f7cf213c34c674a812b3c7f1888132, type: 3}
-    count: 10
-    rate: 2
-  - enemyPrefab: {fileID: 3224660809412963974, guid: 430f4b89408cdcd41a188918b904ec08, type: 3}
+  - enemyPrefab: {fileID: 7898601098705727383, guid: f3f7cf213c34c674a812b3c7f1888132, type: 3}
     count: 5
     rate: 2
-  - enemyPrefab: {fileID: 3741426671212155443, guid: 64d3cc644117e1042a4ee492f324b943, type: 3}
-    count: 3
+  - enemyPrefab: {fileID: 2134286920035167655, guid: 430f4b89408cdcd41a188918b904ec08, type: 3}
+    count: 5
+    rate: 2
+  - enemyPrefab: {fileID: 8527119602878701571, guid: 64d3cc644117e1042a4ee492f324b943, type: 3}
+    count: 5
     rate: 2
   START: {fileID: 250841924}
   waveRate: 3
@@ -381,7 +381,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 472741593}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 90}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1370476032}
