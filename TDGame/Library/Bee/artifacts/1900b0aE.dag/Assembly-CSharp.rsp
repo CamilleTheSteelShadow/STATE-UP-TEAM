@@ -353,6 +353,7 @@
 "Assets/C#/Tower/ArcherTower/ArcherBullet.cs"
 "Assets/C#/Tower/ArcherTower/ArcherTower.cs"
 "Assets/C#/Tower/Builder.cs"
+"Assets/C#/Tower/MagicTower/MagicBullet.cs"
 "Assets/C#/Tower/MagicTower/MagicTower.cs"
 -langversion:8.0
 

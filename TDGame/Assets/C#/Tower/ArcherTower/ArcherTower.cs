@@ -118,9 +118,7 @@ public class ArcherTower : MonoBehaviour
         {
             if(listEnemy[i] == null)
             {
-                if(i==listEnemy.Count-1){
-                    listEnemy[i]=listEnemy[i+1];
-                }
+                listEnemy[i]=listEnemy[i+1];
             }
         }
     }

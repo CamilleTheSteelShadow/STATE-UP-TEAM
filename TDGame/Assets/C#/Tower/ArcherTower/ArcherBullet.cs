@@ -1,6 +1,6 @@
 /*****************************************************
 
-*　　功能　　　　　　防御塔ArcherTower的升级、出售功能
+*　　功能　　　　　　子弹ArcherBullet
 
 *　　作者　　　　　　伍迎
 
@@ -19,11 +19,10 @@ using UnityEngine;
 
 public class ArcherBullet : MonoBehaviour
 {
-
-    //public GameObject target;
-
-    public Transform target; //瞄准的目标
+    /// <summary> 目标敌人坐标 </summary>
     public Vector2 enemyPosition;
+
+    public int harm=1;
 
     //public float speed=1000;
 

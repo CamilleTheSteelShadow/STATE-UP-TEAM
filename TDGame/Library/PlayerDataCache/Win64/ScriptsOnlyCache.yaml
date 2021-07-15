@@ -9,6 +9,7 @@ ScriptsOnlyBuild:
     - EnemySpawner
     - Game
     - Information
+    - MagicBullet
     - MagicTower
     - SelectLevel
     - SettingButton
@@ -18,6 +19,7 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
@@ -82,37 +84,39 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1494}
     - Class: 114
-      Script: {instanceID: 1620}
+      Script: {instanceID: 1612}
     - Class: 114
-      Script: {instanceID: 2608}
+      Script: {instanceID: 2600}
     - Class: 114
-      Script: {instanceID: 2826}
+      Script: {instanceID: 2818}
     - Class: 114
-      Script: {instanceID: 2900}
+      Script: {instanceID: 2892}
     - Class: 114
-      Script: {instanceID: 5188}
+      Script: {instanceID: 5180}
     - Class: 114
-      Script: {instanceID: 5210}
+      Script: {instanceID: 5202}
     - Class: 114
-      Script: {instanceID: 5658}
+      Script: {instanceID: 5650}
     - Class: 114
-      Script: {instanceID: 5880}
+      Script: {instanceID: 5872}
     - Class: 114
-      Script: {instanceID: 6008}
+      Script: {instanceID: 6000}
     - Class: 114
-      Script: {instanceID: 6174}
+      Script: {instanceID: 6166}
     - Class: 114
-      Script: {instanceID: 6226}
+      Script: {instanceID: 6218}
     - Class: 114
-      Script: {instanceID: 6402}
+      Script: {instanceID: 6394}
     - Class: 114
-      Script: {instanceID: 6572}
+      Script: {instanceID: 6564}
     - Class: 114
-      Script: {instanceID: 6992}
+      Script: {instanceID: 6984}
     - Class: 114
-      Script: {instanceID: 7646}
+      Script: {instanceID: 7638}
     - Class: 114
-      Script: {instanceID: 8176}
+      Script: {instanceID: 8168}
+    - Class: 114
+      Script: {instanceID: 23162}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -155,15 +159,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1494}
     - Class: 114
-      Script: {instanceID: 2608}
+      Script: {instanceID: 2600}
     - Class: 114
-      Script: {instanceID: 2826}
+      Script: {instanceID: 2818}
     - Class: 114
-      Script: {instanceID: 4244}
+      Script: {instanceID: 4236}
     - Class: 114
-      Script: {instanceID: 5880}
+      Script: {instanceID: 5872}
     - Class: 114
-      Script: {instanceID: 6402}
+      Script: {instanceID: 6394}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -206,15 +210,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1494}
     - Class: 114
-      Script: {instanceID: 2608}
+      Script: {instanceID: 2600}
     - Class: 114
-      Script: {instanceID: 2826}
+      Script: {instanceID: 2818}
     - Class: 114
-      Script: {instanceID: 5880}
+      Script: {instanceID: 5872}
     - Class: 114
-      Script: {instanceID: 6402}
+      Script: {instanceID: 6394}
     - Class: 114
-      Script: {instanceID: 7126}
+      Script: {instanceID: 7118}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -464,7 +468,7 @@ ScriptsOnlyBuild:
     className: LimbSolver2D
   - hash:
       serializedVersion: 2
-      Hash: 970eb1082ad5f5db964720cde81f8d3c
+      Hash: fe7ca63911548ab3a8241f157c823808
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MagicTower
@@ -1202,7 +1206,7 @@ ScriptsOnlyBuild:
     className: SpriteLibrarySourceAsset
   - hash:
       serializedVersion: 2
-      Hash: 385c57d80d62052f4e6b46c4a0f4c457
+      Hash: b780518fcbd4550776594d1c553198d7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ArcherBullet
@@ -1242,6 +1246,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 4073cecade01b395757b1dd1bc750a6d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MagicBullet
   platform: 19
   scenePathNames:
   - Assets/Scenes/StartScene.unity

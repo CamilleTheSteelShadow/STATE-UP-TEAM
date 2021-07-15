@@ -25,6 +25,11 @@ public class MagicTower : MonoBehaviour
 
     /// <summary> 出售一级防御塔所得金币 </summary>
     public int sellLevelOneMoney=30;
+    
+    public bool isAttack=false;
+
+    //创建一个集合，当Enemy移动到塔范围之内把其添加到集合里，否则将其移除集合
+    public List<GameObject> listEnemy = new List<GameObject>();
 
     public Information inf;
     public GameObject MagicBullet;
@@ -35,6 +40,8 @@ public class MagicTower : MonoBehaviour
     {
         var towerface=transform.Find("towerface");
         towerface.gameObject.SetActive(false);
+        var MagicBullet=transform.Find("MagicBullet");
+        MagicBullet.gameObject.SetActive(false);
     }
 
     /// <summary>
@@ -69,7 +76,15 @@ public class MagicTower : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemy")
         {
-            Instantiate(MagicBullet,transform).transform.localPosition = new Vector2(0,0);
+            var MagicBullet=transform.Find("MagicBullet");
+            MagicBullet.gameObject.SetActive(true);
+            /*if(isAttack==false){
+                Debug.Log("进塔了");
+                listEnemy.Add(other.gameObject);
+                Instantiate(MagicBullet,transform).transform.localPosition = new Vector2(0,0);
+                isAttack=true;
+            }*/
+            
         }
        
     }
@@ -82,10 +97,21 @@ public class MagicTower : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemy")
         {
-            var magicBullet=transform.Find("MagicBullet");
-            MonoBehaviour.Destroy(magicBullet);
+            var MagicBullet=transform.Find("MagicBullet");
+            MagicBullet.gameObject.SetActive(false);
+            /*if(isAttack==true){
+                Debug.Log("敌人出去了");
+                listEnemy.Remove(other.gameObject);
+                //GameObject MagicBullet = this.transform.Find("MagicBullet").gameObject; 
+                //MagicBullet.gameObject.SetActive(false);
+                //MonoBehaviour.Destroy(MagicBullet);
+                //MagicBullet.GetComponent<MagicBullet>().DestroyBullet();
+                isAttack=false;
+            }*/
         }
     }
+
+    
 
     // Update is called once per frame
     void Update()
