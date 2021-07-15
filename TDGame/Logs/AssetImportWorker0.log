@@ -15,11 +15,11 @@ E:/UnityHub/Project/STATE-UP-TEAM/TDGame
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60519
+61010
 Successfully changed project path to: E:/UnityHub/Project/STATE-UP-TEAM/TDGame
 E:/UnityHub/Project/STATE-UP-TEAM/TDGame
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 106.30 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 110.30 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.13f1c1 (aac6de7699ce)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.13f1c1/Editor/Data/Resources/UnitySubsystems
@@ -35,91 +35,91 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.13f1c1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.13f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.13f1c1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56104
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56792
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.13f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002191 seconds.
+Registered in 0.002094 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 108.52 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 120.70 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.104 seconds
+- Completed reload, in  1.112 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1104ms)
-		BeginReloadAssembly (56ms)
+	ReloadAssembly (1113ms)
+		BeginReloadAssembly (57ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (509ms)
+		EndReloadAssembly (513ms)
 			LoadAssemblies (54ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (177ms)
+			SetupTypeCache (175ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (33ms)
-			SetupLoadedEditorAssemblies (252ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (257ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (109ms)
+				RefreshPlugins (121ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (104ms)
-				ProcessInitializeOnLoadMethodAttributes (31ms)
+				ProcessInitializeOnLoadAttributes (99ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004502 seconds.
+Registered in 0.004521 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image E:\UnityHub\Project\STATE-UP-TEAM\TDGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image E:\UnityHub\Project\STATE-UP-TEAM\TDGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 106.23 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 114.66 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.161 seconds
+- Completed reload, in  1.357 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1161ms)
-		BeginReloadAssembly (150ms)
+	ReloadAssembly (1357ms)
+		BeginReloadAssembly (152ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (20ms)
-		EndReloadAssembly (949ms)
-			LoadAssemblies (90ms)
+		EndReloadAssembly (1141ms)
+			LoadAssemblies (91ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (316ms)
+			SetupTypeCache (336ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (64ms)
-			SetupLoadedEditorAssemblies (377ms)
+			RebuildScriptCaches (65ms)
+			SetupLoadedEditorAssemblies (533ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (106ms)
-				BeforeProcessingInitializeOnLoad (87ms)
-				ProcessInitializeOnLoadAttributes (157ms)
-				ProcessInitializeOnLoadMethodAttributes (16ms)
+				RefreshPlugins (115ms)
+				BeforeProcessingInitializeOnLoad (93ms)
+				ProcessInitializeOnLoadAttributes (247ms)
+				ProcessInitializeOnLoadMethodAttributes (64ms)
 				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.74 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 0.89 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3447 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 133.0 MB.
 System memory in use after: 133.0 MB.
 
 Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 3893.
-Total: 2.708000 ms (FindLiveObjects: 0.318500 ms CreateObjectMapping: 0.150800 ms MarkObjects: 2.123800 ms  DeleteObjects: 0.114000 ms)
+Total: 3.111900 ms (FindLiveObjects: 0.376900 ms CreateObjectMapping: 0.184200 ms MarkObjects: 2.391400 ms  DeleteObjects: 0.158000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -136,59 +136,194 @@ AssetImportParameters requested are different than current active one (requested
 Received Import Request.
   path: Assets/Prefab/Tower/MagicTower/MagicBullet.prefab
   artifactKey: Guid(a990a616c2ff22f418870403f48d1dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Tower/MagicTower/MagicBullet.prefab using Guid(a990a616c2ff22f418870403f48d1dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '896952a5b540b85bc2a84acbd5025a2e') in 0.061671 seconds 
+Start importing Assets/Prefab/Tower/MagicTower/MagicBullet.prefab using Guid(a990a616c2ff22f418870403f48d1dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84688fe04f1557bb908cb48df95425b2') in 0.127296 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.344727 seconds.
-  path: Assets/Prefab/Tower/MagicTower/MagicBullet.prefab
-  artifactKey: Guid(a990a616c2ff22f418870403f48d1dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Tower/MagicTower/MagicBullet.prefab using Guid(a990a616c2ff22f418870403f48d1dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '937ddf94b505112472c0d10d6b8487b0') in 0.003990 seconds 
+  Time since last request: 0.000332 seconds.
+  path: Assets/Prefab/builder.prefab
+  artifactKey: Guid(b45e0958ad367514587a7d958f3bc169) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/builder.prefab using Guid(b45e0958ad367514587a7d958f3bc169) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dbc1e350add36891d352613c9085977') in 0.053352 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.199081 seconds.
-  path: Assets/Prefab/Tower/MagicTower/MagicBullet.prefab
-  artifactKey: Guid(a990a616c2ff22f418870403f48d1dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Tower/MagicTower/MagicBullet.prefab using Guid(a990a616c2ff22f418870403f48d1dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26ddb5d61a4820fefc553cddcfe0adfe') in 0.005692 seconds 
+  Time since last request: 0.000357 seconds.
+  path: Assets/Prefab/Tower/MagicTower/MagicTower.prefab
+  artifactKey: Guid(75301f704a8c714438314246ac68167e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Tower/MagicTower/MagicTower.prefab using Guid(75301f704a8c714438314246ac68167e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f4129802bcb2660d8ef1102e45fc0d0') in 0.331948 seconds 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 7.21 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 23 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 65.6 MB.
+System memory in use after: 65.7 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 3895.
+Total: 3.558500 ms (FindLiveObjects: 0.321900 ms CreateObjectMapping: 0.145900 ms MarkObjects: 2.950100 ms  DeleteObjects: 0.139700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 10.705498 seconds.
+  Time since last request: 119.539940 seconds.
   path: Assets/Prefab/Tower/MagicTower/MagicBullet.prefab
   artifactKey: Guid(a990a616c2ff22f418870403f48d1dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Tower/MagicTower/MagicBullet.prefab using Guid(a990a616c2ff22f418870403f48d1dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8160a748fa59c7846ad035a68bb333e1') in 0.004104 seconds 
+Start importing Assets/Prefab/Tower/MagicTower/MagicBullet.prefab using Guid(a990a616c2ff22f418870403f48d1dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f16258099e54dce02b988e95703fb4f') in 0.004120 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.155907 seconds.
-  path: Assets/Prefab/Tower/MagicTower/MagicBullet.prefab
-  artifactKey: Guid(a990a616c2ff22f418870403f48d1dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Tower/MagicTower/MagicBullet.prefab using Guid(a990a616c2ff22f418870403f48d1dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52a6d48e333158f95b535c35bd65bd5a') in 0.006529 seconds 
+  Time since last request: 100.570628 seconds.
+  path: Assets/Prefab/Tower/MagicTower/MagicTower.prefab
+  artifactKey: Guid(75301f704a8c714438314246ac68167e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Tower/MagicTower/MagicTower.prefab using Guid(75301f704a8c714438314246ac68167e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4dd7e4417a030573fd73dbfb2623846') in 0.013418 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.921985 seconds.
-  path: Assets/Prefab/Tower/MagicTower/MagicBullet.prefab
-  artifactKey: Guid(a990a616c2ff22f418870403f48d1dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Tower/MagicTower/MagicBullet.prefab using Guid(a990a616c2ff22f418870403f48d1dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a316a135fe7f472c32bcd23cdce84ef') in 0.007137 seconds 
+  Time since last request: 14.197986 seconds.
+  path: Assets/Resource/Tower/MagicTower/MagicBullet.png
+  artifactKey: Guid(6e44993b80ccc584bba110b61c3daea0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Tower/MagicTower/MagicBullet.png using Guid(6e44993b80ccc584bba110b61c3daea0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fca898982496e0a22e6fe0c93e2c34fd') in 0.103321 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.562327 seconds.
-  path: Assets/Prefab/Tower/MagicTower/MagicBullet.prefab
-  artifactKey: Guid(a990a616c2ff22f418870403f48d1dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Tower/MagicTower/MagicBullet.prefab using Guid(a990a616c2ff22f418870403f48d1dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '828bf26988a81c735820c8515f585070') in 0.004034 seconds 
+  Time since last request: 0.000351 seconds.
+  path: Assets/Resource/Tower/MagicTower/MagicTower_02.png
+  artifactKey: Guid(60d2cc5521ea0e942801622fbfe8ce3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Tower/MagicTower/MagicTower_02.png using Guid(60d2cc5521ea0e942801622fbfe8ce3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98fc0da033da0e0bdb1cab4577978240') in 0.050191 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 8.612454 seconds.
-  path: Assets/Prefab/Tower/MagicTower/MagicBullet.prefab
-  artifactKey: Guid(a990a616c2ff22f418870403f48d1dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Tower/MagicTower/MagicBullet.prefab using Guid(a990a616c2ff22f418870403f48d1dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fe17bd6e4454015a5422fe10cd448aa') in 0.004170 seconds 
+  Time since last request: 0.000355 seconds.
+  path: Assets/Resource/Tower/MagicTower/MagicTower_06.png
+  artifactKey: Guid(37529508a06ac3441a9eeca14063d8da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Tower/MagicTower/MagicTower_06.png using Guid(37529508a06ac3441a9eeca14063d8da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ded8890539b0c20423924e762cdace79') in 0.098662 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.646000 seconds.
-  path: Assets/Prefab/Tower/MagicTower/MagicBullet.prefab
-  artifactKey: Guid(a990a616c2ff22f418870403f48d1dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Tower/MagicTower/MagicBullet.prefab using Guid(a990a616c2ff22f418870403f48d1dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acdc92ba638c83a94b9ef871673cb200') in 0.006201 seconds 
+  Time since last request: 0.000395 seconds.
+  path: Assets/Resource/Tower/MagicTower/MagicTower_04.png
+  artifactKey: Guid(5c84ecac202f43a4386d89b0c2590c05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Tower/MagicTower/MagicTower_04.png using Guid(5c84ecac202f43a4386d89b0c2590c05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0cacc9218c8c8c6e8d1dfe9141c55fe') in 0.058386 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.613699 seconds.
-  path: Assets/Prefab/Tower/MagicTower/MagicBullet.prefab
-  artifactKey: Guid(a990a616c2ff22f418870403f48d1dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Tower/MagicTower/MagicBullet.prefab using Guid(a990a616c2ff22f418870403f48d1dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'becc026dfebc90f9ecc49a33379ee026') in 0.004118 seconds 
+  Time since last request: 0.000316 seconds.
+  path: Assets/Resource/Tower/MagicTower/MagicTower_13.png
+  artifactKey: Guid(8a8b5d696ab593e4b97e3a436617cea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Tower/MagicTower/MagicTower_13.png using Guid(8a8b5d696ab593e4b97e3a436617cea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '615b0349f4fc2b3497b20daad5dfa677') in 0.044385 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/Resource/Tower/MagicTower/MagicTower_11.png
+  artifactKey: Guid(0a5611905c10f9e4ebec069a0958a664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Tower/MagicTower/MagicTower_11.png using Guid(0a5611905c10f9e4ebec069a0958a664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4281788f46e3202c510b5102215a6daa') in 0.046947 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000381 seconds.
+  path: Assets/Resource/Tower/MagicTower/MagicTower_03.png
+  artifactKey: Guid(3e3667040b3ac094baf83ee78e293d4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Tower/MagicTower/MagicTower_03.png using Guid(3e3667040b3ac094baf83ee78e293d4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2940c78c53b66ea1056fbf2266e9cdfd') in 0.041578 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Resource/Tower/MagicTower/MagicTower_01.png
+  artifactKey: Guid(d548b1e292253e643882d918e2087712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Tower/MagicTower/MagicTower_01.png using Guid(d548b1e292253e643882d918e2087712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e0650597e0f6f5f842a797b91c67ecd') in 0.108788 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000330 seconds.
+  path: Assets/Resource/Tower/MagicTower/MagicTower_07.png
+  artifactKey: Guid(b3499305772edd64faa121d85076fd85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Tower/MagicTower/MagicTower_07.png using Guid(b3499305772edd64faa121d85076fd85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd80972100180d62279413d42187d7e3f') in 0.056502 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000355 seconds.
+  path: Assets/Resource/Tower/MagicTower/MagicTower_09.png
+  artifactKey: Guid(dfde8762ed8b80e499002b2709388442) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Tower/MagicTower/MagicTower_09.png using Guid(dfde8762ed8b80e499002b2709388442) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '301471f74f2bedebc112a74ce9eada19') in 0.051387 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000363 seconds.
+  path: Assets/Resource/Tower/MagicTower/MagicTower_05.png
+  artifactKey: Guid(d05e46710af7a8a479d6df789d81d275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Tower/MagicTower/MagicTower_05.png using Guid(d05e46710af7a8a479d6df789d81d275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01925208c70eb5e3c0f0f1b73f85f0d6') in 0.097534 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000358 seconds.
+  path: Assets/Resource/Tower/MagicTower/MagicTower_10.png
+  artifactKey: Guid(d4bebba875cbf4248a0fc33b7d301d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Tower/MagicTower/MagicTower_10.png using Guid(d4bebba875cbf4248a0fc33b7d301d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0211ac9e28f2308723d3c2c5060a3e7') in 0.027680 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000481 seconds.
+  path: Assets/Resource/Tower/MagicTower/MagicTower_12.png
+  artifactKey: Guid(1c48ca313147178488817cf4af006fac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Tower/MagicTower/MagicTower_12.png using Guid(1c48ca313147178488817cf4af006fac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '204f31b086e797131e49356b5dff53e8') in 0.059365 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000314 seconds.
+  path: Assets/Resource/Tower/MagicTower/MagicTower_08.png
+  artifactKey: Guid(fd8b6bd009017aa4c85dc44a7f345071) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Tower/MagicTower/MagicTower_08.png using Guid(fd8b6bd009017aa4c85dc44a7f345071) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7422d16e5b8647dbeb7cab2ea1a9b71') in 0.019510 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.038409 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\UnityHub\Project\STATE-UP-TEAM\TDGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\UnityHub\Project\STATE-UP-TEAM\TDGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.93 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.245 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2245ms)
+		BeginReloadAssembly (122ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (39ms)
+		EndReloadAssembly (2058ms)
+			LoadAssemblies (95ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (501ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (252ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (61ms)
+				ProcessInitializeOnLoadAttributes (166ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.74 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3456 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 143.6 MB.
+System memory in use after: 143.7 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 4117.
+Total: 2.907800 ms (FindLiveObjects: 0.329800 ms CreateObjectMapping: 0.142500 ms MarkObjects: 2.326400 ms  DeleteObjects: 0.108300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
