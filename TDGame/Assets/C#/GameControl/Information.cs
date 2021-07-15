@@ -39,7 +39,7 @@ public class Information : MonoBehaviour
         switch(scene.name){
             case "Level1":
             Information.life=10;
-            Information.gold=100;
+            Information.gold=120;
             break;
 
         }

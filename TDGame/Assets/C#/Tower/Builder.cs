@@ -23,6 +23,7 @@ public class Builder : MonoBehaviour
 {
 
     public GameObject ArcherTower;
+    public GameObject MagicTower;
 
     public Information inf;
 
@@ -58,6 +59,22 @@ public class Builder : MonoBehaviour
             face.gameObject.SetActive(false);
             Instantiate(ArcherTower,transform).transform.localPosition = new Vector2(0,0);
             levelOneMoney = ArcherTower.GetComponent<ArcherTower>().levelOneMoney;
+            inf.GoldDecrease(levelOneMoney);
+        }
+        
+    }
+
+    /// <summary>
+    /// 点击事件：建造防御塔MagicTower
+    /// </summary>
+    public void CreateMagicTower(){
+        if(Information.gold>=50){
+            var builderBtn=transform.Find("builderBtn");
+            builderBtn.gameObject.SetActive(false);
+            var face=transform.Find("face");
+            face.gameObject.SetActive(false);
+            Instantiate(MagicTower,transform).transform.localPosition = new Vector2(0,0);
+            levelOneMoney = MagicTower.GetComponent<MagicTower>().levelOneMoney;
             inf.GoldDecrease(levelOneMoney);
         }
         

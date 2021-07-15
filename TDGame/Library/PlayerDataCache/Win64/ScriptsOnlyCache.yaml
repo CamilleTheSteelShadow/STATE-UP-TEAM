@@ -17,7 +17,6 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
-    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
@@ -80,35 +79,35 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1494}
     - Class: 114
-      Script: {instanceID: 1622}
+      Script: {instanceID: 1616}
     - Class: 114
-      Script: {instanceID: 2610}
+      Script: {instanceID: 2604}
     - Class: 114
-      Script: {instanceID: 2828}
+      Script: {instanceID: 2822}
     - Class: 114
-      Script: {instanceID: 5188}
+      Script: {instanceID: 5182}
     - Class: 114
-      Script: {instanceID: 5210}
+      Script: {instanceID: 5204}
     - Class: 114
-      Script: {instanceID: 5658}
+      Script: {instanceID: 5652}
     - Class: 114
-      Script: {instanceID: 5880}
+      Script: {instanceID: 5874}
     - Class: 114
-      Script: {instanceID: 6008}
+      Script: {instanceID: 6002}
     - Class: 114
-      Script: {instanceID: 6174}
+      Script: {instanceID: 6168}
     - Class: 114
-      Script: {instanceID: 6226}
+      Script: {instanceID: 6220}
     - Class: 114
-      Script: {instanceID: 6402}
+      Script: {instanceID: 6396}
     - Class: 114
-      Script: {instanceID: 6572}
+      Script: {instanceID: 6566}
     - Class: 114
-      Script: {instanceID: 6992}
+      Script: {instanceID: 6986}
     - Class: 114
-      Script: {instanceID: 7646}
+      Script: {instanceID: 7640}
     - Class: 114
-      Script: {instanceID: 8176}
+      Script: {instanceID: 8170}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -151,15 +150,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1494}
     - Class: 114
-      Script: {instanceID: 2610}
+      Script: {instanceID: 2604}
     - Class: 114
-      Script: {instanceID: 2828}
+      Script: {instanceID: 2822}
     - Class: 114
-      Script: {instanceID: 4244}
+      Script: {instanceID: 4238}
     - Class: 114
-      Script: {instanceID: 5880}
+      Script: {instanceID: 5874}
     - Class: 114
-      Script: {instanceID: 6402}
+      Script: {instanceID: 6396}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -202,15 +201,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1494}
     - Class: 114
-      Script: {instanceID: 2610}
+      Script: {instanceID: 2604}
     - Class: 114
-      Script: {instanceID: 2828}
+      Script: {instanceID: 2822}
     - Class: 114
-      Script: {instanceID: 5880}
+      Script: {instanceID: 5874}
     - Class: 114
-      Script: {instanceID: 6402}
+      Script: {instanceID: 6396}
     - Class: 114
-      Script: {instanceID: 7126}
+      Script: {instanceID: 7120}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
