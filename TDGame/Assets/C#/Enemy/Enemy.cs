@@ -44,13 +44,23 @@ public class Enemy : MonoBehaviour
 
     void ReachDestination()//敌人到达终点，销毁
     {
-        Information.life = Information.life - 1;
+        if (Information.life > 0)
+        {
+            Information.life = Information.life - 1;
+        }
+        
         GameObject.Destroy(this.gameObject);
+        if (Information.life == 0)
+        {
+            GameManger.Instance.Failed();
+        }
+        
     }
 
     void OnDestroy()//敌人被塔打败，销毁
     {
         EnemySpawner.CountEnemyAlive--;
+        
     }
 
     public void TakeDamage(int damage)//敌人受到伤害
@@ -68,6 +78,8 @@ public class Enemy : MonoBehaviour
     {
         GameObject effect = GameObject.Instantiate(enemyDieEffect, transform.position, transform.rotation);
         Destroy(effect, 1.5f);
+        
         Destroy(this.gameObject);
+       
     }
 }
